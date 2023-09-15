@@ -120,7 +120,7 @@ class _MyHomePageState extends State<MyHomePage> {
       double a = double.parse(alpha);
       double b = double.parse(beta);
       double d = double.parse(delta);
-      return (b / d * a);
+      return (d / b * a);
     }
     if (delta.isEmpty &&
         alpha.isNotEmpty &&
