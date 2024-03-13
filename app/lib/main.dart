@@ -11,12 +11,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Dreisatz',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Dreisatz'),
+      home: const MyHomePage(title: 'rule of proportion'),
     );
   }
 }
@@ -65,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ergebnis = null;
                 });
               }),
-              child: const Text("löschen"),
+              child: const Text("clear"),
             ),
             TextButton(
               onPressed: (() {
@@ -75,7 +75,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ergebnis = erg;
                 });
               }),
-              child: const Text("berechnen"),
+              child: const Text("calculate"),
             )
           ]),
           ergebnis == null
